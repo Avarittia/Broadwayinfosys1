@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 2;
+  letter-spacing: 2px;
+  font-family: "kumbh sans";
+  color: rgb(75, 31, 31);
+}
+
+.up {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  background: #FDF8F2;
+}
+.up i {
+  color: #330101;
+}
+
+.up:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.italics {
+  font-family: "dancing script";
+}
+
+.italicss {
+  font-family: "dancing script";
+  color: white;
+}
+
+dialog {
+  position: fixed;
+  background: #FDF8F2;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translatey(-50%);
+  margin: auto;
+  padding: 0 1rem 1rem 1rem;
+}
+dialog h2 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+dialog p {
+  padding: 1rem 0;
+}
+dialog form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+dialog form input {
+  width: 50%;
+}
+dialog form button {
+  width: 30%;
+  border: none;
+  background-color: #330101;
+  color: #FDF8F2;
+}
+dialog form button:hover {
+  background: #692b2b;
+  transition: ease-in 0.2s all;
+}
+dialog .close {
+  text-align: right;
+}
+dialog .close button {
+  background: none;
+  font-size: 1.5rem;
+  border: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0;
+  background: #FDF8F2;
+  gap: 1rem;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+header nav ul .cross {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  display: none;
+}
+header nav ul li {
+  padding: 0;
+}
+header nav ul li a {
+  width: 100%;
+  color: #330101;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: black;
+  transition: all 0.3s ease-in;
+}
+header nav ul li a:visited {
+  color: #330101;
+}
+header .shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .shop button {
+  background: none;
+  border: none;
+}
+header .shop .burger {
+  color: black;
+  font-size: 1.5rem;
+  display: none;
+}
+header .shop .cart {
+  font-size: 1.2rem;
+}
+
+.banner {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+  position: relative;
+}
+.banner h1 {
+  padding: 1rem 0;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fdf8f2;
+}
+.banner p {
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: #fdf8f2;
+}
+.banner .description {
+  width: 70%;
+  position: absolute;
+  margin: auto;
+  background: #fdf8f2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 1rem;
+  left: 15%;
+}
+.banner .description h1 {
+  color: rgb(75, 31, 31);
+}
+.banner .description p {
+  color: rgb(75, 31, 31);
+}
+
+.coffee-type {
+  margin-top: 15rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.coffee-type h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.coffee-type .imggrid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  padding: 1rem 0;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.coffee-type .imggrid .image {
+  width: 100;
+  background: rgb(75, 31, 31);
+  color: #fdf8f2;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.motto {
+  text-align: left;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.mashed.com/img/gallery/coffee-expert-reveals-why-using-old-coffee-beans-is-a-major-no-no/l-intro-1615979710.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.motto h1 {
+  color: #fdf8f2;
+  padding: 2.5rem 0;
+}
+.motto p {
+  color: #fdf8f2;
+  grid-column: 1/2;
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+.motto button {
+  grid-column: 1/2;
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  background: none;
+  border: 1px solid white;
+  opacity: 1;
+  -webkit-backdrop-filter: blur 1rem;
+          backdrop-filter: blur 1rem;
+  color: white;
+}
+
+.products {
+  padding: 2rem 0;
+  text-align: center;
+}
+.products .coffee {
+  width: 80%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.products .types {
+  height: aUTO;
+  margin: auto;
+  background: #fdf8f2;
+  width: 70%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.products .types img {
+  width: 50%;
+  padding: 2rem 0;
+}
+.products .types h3 {
+  padding: 0.5rem;
+}
+.products .types h4 {
+  padding: 0.5rem;
+}
+.products .types button {
+  background: #330101;
+  color: #FDF8F2;
+  width: 160px;
+  height: 34px;
+  border: none;
+}
+.products .types button:hover {
+  background: #692b2b;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid rgb(207, 204, 204);
+}
+.footer .footers {
+  border-bottom: rgb(207, 204, 204) 1px solid;
+}
+.footer .footers .first {
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer .footers .first h1 {
+  padding: 1rem 0;
+}
+.footer .footers .first .open-button {
+  border-radius: 50px;
+  width: 170px;
+  padding: 0.3rem 0;
+  border: none;
+  background: #330101;
+  color: #FDF8F2;
+}
+.footer .footers .first p {
+  padding: 2rem 0;
+}
+.footer .second {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.footer .second .nav1 h3 {
+  padding: 1rem;
+}
+.footer .second .nav1 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer .second .nav1 ul li {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  body dialog {
+    position: fixed;
+    background: #FDF8F2;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    top: 70%;
+    width: 75%;
+    height: 70%;
+    transform: translatey(-50%);
+    margin: auto;
+    padding: 0 1rem 1rem 1rem;
+  }
+  body dialog h2 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  body dialog p {
+    padding: 1rem 0;
+  }
+  body dialog form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  body dialog form input {
+    width: 70%;
+  }
+  body dialog form button {
+    width: 30%;
+    border: none;
+    background-color: #330101;
+    color: #FDF8F2;
+  }
+  body dialog form button:hover {
+    background: #692b2b;
+    transition: ease-in 0.2s all;
+  }
+  body dialog .close {
+    text-align: right;
+  }
+  body dialog .close button {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+  }
+  body header {
+    grid-template-columns: 1fr 1fr;
+  }
+  body header .nav-active {
+    transform: translate(0%);
+  }
+  body header nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+    z-index: 999;
+    transform: translate(100%);
+    transition: 0.3s ease-in;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(3rem);
+            backdrop-filter: blur(3rem);
+  }
+  body header nav ul {
+    position: relative;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+  }
+  body header nav ul .cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+  body header nav ul li {
+    padding: 2rem 0;
+  }
+  body header nav ul li a {
+    color: #692b2b;
+    text-decoration: none;
+  }
+  body header .shop .burger {
+    display: block;
+  }
+  body .banner .description {
+    width: 100%;
+    position: static;
+  }
+  body .coffee-type {
+    margin-top: 0;
+  }
+}
+@media (max-width: 450px) {
+  body dialog {
+    position: fixed;
+    background: #FDF8F2;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    top: 50%;
+    width: 100%;
+    height: 65%;
+    transform: translatey(-50%);
+    margin: auto;
+    padding: 0 1rem 1rem 1rem;
+  }
+  body dialog h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  body dialog p {
+    padding: 1rem 0;
+  }
+  body dialog form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  body dialog form input {
+    width: 70%;
+  }
+  body dialog form button {
+    width: 30%;
+    border: none;
+    background-color: #330101;
+    color: #FDF8F2;
+  }
+  body dialog form button:hover {
+    background: #692b2b;
+    transition: ease-in 0.2s all;
+  }
+  body dialog .close {
+    text-align: right;
+  }
+  body dialog .close button {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+  }
+  body header {
+    grid-template-columns: 1fr 1fr;
+  }
+  body header .nav-active {
+    transform: translate(0%);
+  }
+  body header nav {
+    position: fixed;
+    inset: 0 0 0 0%;
+    z-index: 999;
+    transform: translate(100%);
+    transition: 0.5s ease-in;
+    background: hsla(0deg, 0%, 100%, 0.8);
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+  }
+  body header nav ul {
+    position: relative;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+  }
+  body header nav ul .cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+}
+@media (max-width: 390px) {
+  body dialog {
+    position: fixed;
+    background: #FDF8F2;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    top: 70%;
+    width: 100%;
+    height: 75%;
+    transform: translatey(-50%);
+    margin: auto;
+    padding: 0 1rem 1rem 1rem;
+  }
+  body dialog h2 {
+    display: flex;
+    align-items: center;
+  }
+  body dialog p {
+    padding: 1rem 0;
+  }
+  body dialog form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  body dialog form input {
+    width: 70%;
+  }
+  body dialog form button {
+    width: 30%;
+    border: none;
+    background-color: #330101;
+    color: #FDF8F2;
+  }
+  body dialog form button:hover {
+    background: #692b2b;
+    transition: ease-in 0.2s all;
+  }
+  body dialog .close {
+    text-align: right;
+  }
+  body dialog .close button {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+  }
+  body header .nav-active {
+    transform: translate(0%);
+  }
+  body header nav {
+    position: fixed;
+    inset: 0 0 0 0%;
+    z-index: 999;
+    transform: translate(100%);
+    transition: 0.5s ease-in;
+    background: hsla(0deg, 0%, 100%, 0.1);
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+  }
+  body header nav ul {
+    position: relative;
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+  }
+  body header nav ul .cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+}/*# sourceMappingURL=Coffee.css.map */
